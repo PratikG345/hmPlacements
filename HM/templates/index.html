@@ -1,0 +1,591 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hari Om Udyog India Private Limited</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style></style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src={% static 'Img/logo.png' %} alt="" height="40px" />
+        </div>
+        <span class="nav-brand">HM Placements</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Workforce →</a>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Trusted Manpower Solutions</span>
+        </div>
+        <h1>
+          Building India's<br /><span>Workforce,</span><br />One Company at a
+          Time
+        </h1>
+        <p class="hero-sub">
+          We connect manufacturing giants and growing enterprises with skilled
+          blue-collar workers and professional white-collar talent — reliably,
+          swiftly, and with zero compromise on quality.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Request Workforce</a>
+          <a href="#services" class="btn-outline">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-num">1000+</div>
+          <div class="stat-label">Candidates Placed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Client Companies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Years Expertise</div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-img-block">
+          <div class="about-img-main">
+            <div class="about-img-icon">🏭</div>
+          </div>
+          <div class="about-img-badge">
+            <strong>15+</strong>
+            <span>Years of Trust</span>
+          </div>
+        </div>
+        <div>
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">
+            Your Reliable Partner in Workforce Excellence
+          </h2>
+          <p class="section-desc">
+            HM Placements is a Nashik-based manpower solutions firm dedicated to
+            bridging the gap between industry demands and skilled human capital.
+            From the factory floor to the corner office, we deliver the right
+            people at the right time.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">⚡</div>
+              <div class="about-feature-text">
+                <strong>Fast Deployment</strong>
+                <p>
+                  We mobilize workers within 24–72 hours of requirement
+                  confirmation.
+                </p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">✅</div>
+              <div class="about-feature-text">
+                <strong>Verified Candidates</strong>
+                <p>
+                  Every candidate is background-checked, skill-assessed, and
+                  document-verified.
+                </p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🤝</div>
+              <div class="about-feature-text">
+                <strong>Full Compliance</strong>
+                <p>
+                  We handle PF, ESIC, labour law compliance, and contractor
+                  licensing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-header">
+        <div>
+          <span class="section-tag">What We Offer</span>
+          <h2 class="section-title">Workforce Solutions for Every Need</h2>
+        </div>
+        <a href="#contact" class="btn-primary">Get a Quote →</a>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(201, 168, 76, 0.1)">
+            🔧
+          </div>
+          <h3>Skilled Workers & Operators</h3>
+          <p>
+            Certified machine operators, CNC programmers, and production workers
+            for automotive, engineering, and process industries.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Machine Operators</span>
+            <span class="tag">CNC / VMC</span>
+            <span class="tag">Production</span>
+            <span class="tag">QC Inspectors</span>
+          </div>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon">⭐</div>
+          <h3>Welders & Fabricators</h3>
+          <p>
+            Qualified welders with expertise in MIG, TIG, ARC, and CO2 welding.
+            Structural fabricators and pipefitters available pan-region.
+          </p>
+          <div class="service-tags">
+            <span class="tag">MIG / TIG Welding</span>
+            <span class="tag">ARC Welding</span>
+            <span class="tag">Fabrication</span>
+            <span class="tag">Pipefitting</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(26, 20, 16, 0.06)">
+            🦺
+          </div>
+          <h3>General Helpers & Labour</h3>
+          <p>
+            Reliable helpers, loaders, packers, and housekeeping staff for
+            warehouses, factories, and construction sites.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Helpers</span>
+            <span class="tag">Loaders</span>
+            <span class="tag">Packers</span>
+            <span class="tag">Housekeeping</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(139, 32, 32, 0.08)">
+            💼
+          </div>
+          <h3>HR & Admin Staff</h3>
+          <p>
+            Experienced HR executives, payroll managers, compliance officers,
+            and admin professionals for your corporate needs.
+          </p>
+          <div class="service-tags">
+            <span class="tag">HR Executives</span>
+            <span class="tag">Payroll</span>
+            <span class="tag">Compliance</span>
+            <span class="tag">Admin</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(15, 100, 60, 0.08)">
+            📊
+          </div>
+          <h3>Accounts & Finance</h3>
+          <p>
+            Qualified accountants, GST consultants, auditors, and finance
+            managers for seamless financial operations.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Accountants</span>
+            <span class="tag">GST / Taxation</span>
+            <span class="tag">Auditors</span>
+            <span class="tag">Finance Mgr</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background: rgba(30, 60, 140, 0.07)">
+            🖥️
+          </div>
+          <h3>Office & IT Staff</h3>
+          <p>
+            Computer operators, data entry professionals, IT support staff, and
+            front-office executives to keep your business running.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Data Entry</span>
+            <span class="tag">IT Support</span>
+            <span class="tag">Receptionist</span>
+            <span class="tag">Back Office</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="industries" id="industries">
+      <span class="section-tag">Industries We Serve</span>
+      <h2 class="section-title">Across Every Sector</h2>
+      <p class="section-desc">
+        Our manpower solutions span a diverse range of industries, ensuring we
+        meet your specific domain requirements with precision.
+      </p>
+      <div class="industry-pills">
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🚗</span>Automotive
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">⚙️</span>Engineering & Fabrication
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">💊</span>Pharmaceuticals
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🏗️</span>Construction
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">📦</span>Warehousing & Logistics
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🔩</span>Metal & Steel
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🏭</span>Process Industries
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🧴</span>FMCG & Packaging
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🌾</span>Agro Processing
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">💡</span>Electrical & Electronics
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🏢</span>Corporate Offices
+        </div>
+        <div class="industry-pill">
+          <span class="industry-pill-icon">🔬</span>R&D & Labs
+        </div>
+      </div>
+    </section>
+
+    <section class="clients" id="clients">
+      <span class="section-tag">Our Clients</span>
+      <h2 class="section-title">Trusted by Industry Leaders</h2>
+      <p class="section-desc">
+        We proudly serve a growing network of companies across Maharashtra,
+        delivering reliable manpower solutions tailored to their needs.
+      </p>
+
+      <div class="clients-grid">
+        <!-- Client Card 1 -->
+        <div class="client-card">
+          <div class="client-logo">
+            <img src={% static 'Img/akankshalogo.svg' %} height="40px" alt="" />
+          </div>
+          <h4>Akanksha Power</h4>
+          <p>Power & Energy sector</p>
+        </div>
+
+        <!-- Client Card 2 -->
+        <div class="client-card">
+          <div class="client-logo">
+            <img src={% static 'Img/alflogo.png' %} height="40px" alt="" />
+          </div>
+          <h4>ALF Engineering</h4>
+          <p>Automotive Manufacturing</p>
+        </div>
+
+        <!-- Client Card 3 -->
+        <div class="client-card">
+          <div class="client-logo">
+            <img src={% static 'Img/cielogo.png' %} height="40px" alt="" />
+          </div>
+          <h4>CIE India</h4>
+          <p>Automotive Industry</p>
+        </div>
+
+        <!-- Client Card 4 -->
+        <div class="client-card">
+          <div class="client-logo">
+            <img src={% static 'Img/RUCHA-LOGO.png' %} height="40px" alt="" />
+          </div>
+          <h4>Rucha Engineer Pvt Ltd</h4>
+          <p>Automotive Manufacturing & Engineering</p>
+        </div>
+
+        <!-- Client Card 5 -->
+        <div class="client-card">
+          <div class="client-logo">
+            <img src={% static 'Img/yashashreelogo.png' %} height="40px" alt="" />
+          </div>
+          <h4>Yeshshree Press Comps Pvt. Ltd.</h4>
+          <p>Automotive Manufactures (OEMs)</p>
+        </div>
+
+        <!-- Client Card 6 -->
+        <div class="client-card">
+          <div class="client-logo">
+            <img src={% static 'Img/MKlogo.png' %} height="40px" alt="" />
+          </div>
+          <h4>MKTRON Group of Companies</h4>
+          <p>Metal Manufacturing & Automotive Components</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div style="text-align: center; margin-bottom: 12px">
+        <span class="section-tag">How We Work</span>
+      </div>
+      <h2
+        class="section-title"
+        style="text-align: center; max-width: 480px; margin: 0 auto 12px"
+      >
+        Simple. Swift. Seamless.
+      </h2>
+      <p class="section-desc" style="text-align: center; margin: 0 auto">
+        Our 4-step process ensures you get the right workforce with minimal
+        effort on your part.
+      </p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h4>Requirement Brief</h4>
+          <p>
+            Share your workforce requirements — role, skills, count, and
+            timeline.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h4>Candidate Sourcing</h4>
+          <p>
+            We screen, verify, and shortlist from our extensive talent pool.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h4>Interview & Selection</h4>
+          <p>
+            You interview and approve candidates — complete control stays with
+            you.
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <h4>Deployment & Support</h4>
+          <p>
+            Workers are deployed with ongoing support, compliance, and payroll.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="whyus">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title">The HM Advantage</h2>
+      <p class="section-desc">
+        Built on trust, powered by relationships, and committed to excellence in
+        every placement we make.
+      </p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h4>Pan-Region Network</h4>
+          <p>
+            Deep roots in Nashik and surrounding industrial belts — Pune,
+            Aurangabad, Ahmednagar — giving us fast access to quality talent.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h4>Labour Law Compliance</h4>
+          <p>
+            We manage PF, ESIC, gratuity, and all statutory compliances so you
+            can focus entirely on your business.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h4>Replacement Guarantee</h4>
+          <p>
+            If a placed candidate doesn't meet your expectations, we provide a
+            free replacement within a defined period — no questions asked.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <h4>Dedicated Account Manager</h4>
+          <p>
+            Every client gets a dedicated point of contact for all requirements,
+            escalations, and day-to-day coordination.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">05</div>
+          <h4>Both Blue & White Collar</h4>
+          <p>
+            From factory floor helpers to senior HR managers — one partner
+            handles all your manpower needs across the hierarchy.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">06</div>
+          <h4>Transparent Pricing</h4>
+          <p>
+            Clear, competitive pricing with no hidden charges. Flexible models —
+            contract, permanent, or project-based staffing available.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-grid">
+        <div>
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Your Team Together</h2>
+          <p class="section-desc">
+            Whether you need 5 helpers or 500 skilled workers, we're ready to
+            respond. Reach out and our team will connect with you within hours.
+          </p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <strong>Office Location</strong>
+                <span>B-16/2, MIDC Ambad, Nashik, Maharashtra 422010</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <strong>Phone / WhatsApp</strong>
+                <span>+91 90285 07621</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <span>Hariomplacement1@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div class="contact-item-text">
+                <strong>Working Hours</strong>
+                <span>Sun – Fri: 9:00 AM – 7:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form method="POST">
+  {% csrf_token %}
+
+  <div class="contact-form">
+    <p style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 24px;">
+      Send a Requirement
+    </p>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Full name" required />
+      </div>
+
+      <div class="form-group">
+        <label>Company</label>
+        <input type="text" name="company" placeholder="Company name" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
+      </div>
+
+      <div class="form-group">
+        <label>Workforce Type</label>
+        <select name="workforce">
+          <option value="">Select type</option>
+          <option>Blue Collar – Helpers</option>
+          <option>Blue Collar – Operators</option>
+          <option>Blue Collar – Welders</option>
+          <option>White Collar – HR / Admin</option>
+          <option>White Collar – Accounts</option>
+          <option>White Collar – Office Staff</option>
+          <option>Mixed Requirement</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Your Requirement</label>
+      <textarea name="requirement"
+        placeholder="Describe the roles, number of people, skills needed..."></textarea>
+    </div>
+
+    <button type="submit" class="form-submit">
+      Submit Requirement →
+    </button>
+  </div>
+</form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">HM Placements</div>
+          <p class="footer-tagline">
+            Your trusted manpower partner in Maharashtra. Connecting industry
+            with skilled workforce since over a decade.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Skilled Workers</a></li>
+            <li><a href="#">Welders & Fabricators</a></li>
+            <li><a href="#">General Helpers</a></li>
+            <li><a href="#">HR & Admin Staff</a></li>
+            <li><a href="#">Accounts & Finance</a></li>
+            <li><a href="#">Office & IT Staff</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy"
+          >© 2025 Hari Om Udyog. All rights reserved. | Nashik,
+          Maharashtra</span
+        >
+        <span class="footer-om">ॐ</span>
+      </div>
+    </footer>
+  </body>
+</html>
