@@ -32,7 +32,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(26, 20, 16, 0.97);
+  background: #f3f893;
   backdrop-filter: blur(12px);
   padding: 0 5%;
   height: 64px;
@@ -46,10 +46,11 @@ nav {
   align-items: center;
   gap: 10px;
 }
+.nav-links a[href*="jobs"] {
+  color: var(--gold);
+  font-weight: 600;
+}
 .nav-logo-icon {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -59,11 +60,21 @@ nav {
   font-size: 16px;
   color: var(--ink);
 }
+
+.nav-logo-icon img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
 .nav-brand {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 17px;
-  color: var(--gold);
+  color: #0d0f1c;
+}
+.HM {
+  color: red;
 }
 .nav-links {
   display: flex;
@@ -71,7 +82,7 @@ nav {
   list-style: none;
 }
 .nav-links a {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(84, 6, 6, 0.75);
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
@@ -100,7 +111,7 @@ nav {
 /* HERO */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(160deg, #1a1410 0%, #2d1f0e 50%, #1a1410 100%);
+  background: linear-gradient(160deg, #1a0f10 0%, #1f787a 50%, #1a1410 100%);
   display: flex;
   align-items: center;
   padding: 80px 5% 60px;

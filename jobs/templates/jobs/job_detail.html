@@ -1,0 +1,203 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ job.title }} | HM Elite Placements</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/job-detail.css' %}">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src="{% static 'Img/HM11.png' %}" alt="" height="100px" />
+        </div>
+        <span class="nav-brand"><span class="HM">HM</span> Elite Placements</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'home' %}#about">About</a></li>
+        <li><a href="{% url 'home' %}#services">Services</a></li>
+        <li><a href="{% url 'home' %}#industries">Industries</a></li>
+        <li><a href="{% url 'home' %}#clients">Our Clients</a></li>
+        <li><a href="{% url 'home' %}#process">Process</a></li>
+        <li><a href="{% url 'job_list' %}" style="color: var(--gold); font-weight: 600;">Careers</a></li>
+        <li><a href="{% url 'home' %}#contact">Contact</a></li>
+      </ul>
+      <a href="{% url 'home' %}#contact" class="nav-cta">Hire Workforce →</a>
+    </nav>
+
+    <section class="job-hero">
+      <div class="job-hero-bg-pattern"></div>
+      <div class="job-hero-content">
+        <div class="job-badge">
+          <span class="job-badge-dot"></span>
+          <span>Current Opening</span>
+        </div>
+        <h1>{{ job.title }}</h1>
+        <div class="job-meta">
+          <span class="job-meta-item">📍 Location: Nashik, Maharashtra</span>
+          <span class="job-meta-item">⏰ Full Time</span>
+          <span class="job-meta-item">🏢 HM Elite Placements</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="job-main">
+      <div class="job-grid">
+        <div class="job-description-card">
+          <div class="job-description-header">
+            <h2>Job Description</h2>
+          </div>
+          <div class="job-description-content">
+            {{ job.description|linebreaks }}
+          </div>
+          
+          <div class="job-requirements">
+            <h3>Requirements</h3>
+            <ul>
+              <li>Minimum 1-2 years of relevant experience</li>
+              <li>Good communication skills</li>
+              <li>Willing to work in Nashik/MIDC area</li>
+              <li>Immediate joining preferred</li>
+            </ul>
+          </div>
+          
+          <div class="job-benefits">
+            <h3>What We Offer</h3>
+            <ul>
+              <li>Competitive salary as per industry standards</li>
+              <li>PF & ESIC benefits</li>
+              <li>Career growth opportunities</li>
+              <li>Supportive work environment</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="application-form-card">
+          <div class="application-header">
+            <h2>Apply for this Position</h2>
+            <p>Fill out the form below to submit your application</p>
+          </div>
+          
+          <form method="POST" enctype="multipart/form-data" class="job-application-form">
+            {% csrf_token %}
+            
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="resume">Upload Resume (PDF/DOC) *</label>
+              <div class="file-upload-area">
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                <span class="file-upload-hint">PDF or DOC files only, Max 5MB</span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="experience">Years of Experience</label>
+              <select id="experience" name="experience">
+                <option value="">Select experience</option>
+                <option value="0-1">Fresher (Less than 1 year)</option>
+                <option value="1-2">1-2 years</option>
+                <option value="2-3">2-3 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="5+">5+ years</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Cover Letter / Additional Message (Optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us why you're a good fit for this role..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+              Submit Application →
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    {% comment %} <section class="similar-jobs">
+      <div class="similar-jobs-header">
+        <span class="section-tag">Explore More</span>
+        <h2 class="section-title">Similar Opportunities</h2>
+        <p class="section-desc">Check out other openings at HM Elite Placements</p>
+      </div>
+      <div class="similar-jobs-grid">
+        <div class="similar-job-card">
+          <h4>Machine Operator</h4>
+          <p>CNC / VMC experience required</p>
+          <a href="#" class="view-link">View Details →</a>
+        </div>
+        <div class="similar-job-card">
+          <h4>Production Supervisor</h4>
+          <p>Manufacturing industry experience</p>
+          <a href="#" class="view-link">View Details →</a>
+        </div>
+        <div class="similar-job-card">
+          <h4>HR Executive</h4>
+          <p>Recruitment & payroll management</p>
+          <a href="#" class="view-link">View Details →</a>
+        </div>
+      </div>
+    </section> {% endcomment %}
+
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">HM Placements</div>
+          <p class="footer-tagline">
+            Your trusted manpower partner in Maharashtra. Connecting industry
+            with skilled workforce since over a decade.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Skilled Workers</a></li>
+            <li><a href="#">Welders & Fabricators</a></li>
+            <li><a href="#">General Helpers</a></li>
+            <li><a href="#">HR & Admin Staff</a></li>
+            <li><a href="#">Accounts & Finance</a></li>
+            <li><a href="#">Office & IT Staff</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="{% url 'home' %}#about">About Us</a></li>
+            <li><a href="{% url 'job_list' %}">Careers</a></li>
+            <li><a href="{% url 'home' %}#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy"
+          >© 2025 Hari Om Udyog. All rights reserved. | Nashik,
+          Maharashtra</span
+        >
+        <span class="footer-om">ॐ</span>
+      </div>
+    </footer>
+  </body>
+</html>
